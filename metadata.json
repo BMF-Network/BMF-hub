@@ -1,0 +1,6 @@
+{
+  "name": "BMF Family Hub",
+  "description": "Private family website for The Best Mate Family (BMF). 'Our love never fail' · Since 2021.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

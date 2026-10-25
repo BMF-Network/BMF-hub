@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bmf-navy: #22244A;
+    --bmf-gold: #E2B04A;
+    --bmf-offwhite: #F5F6FA;
+  }
+}
+
+.font-heading {
+  font-family: 'Fraunces', Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+.font-body {
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+}
+
+.font-motto {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Gold underline under section titles as specified in DESIGN requirements */
+.gold-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3.5px;
+  background: linear-gradient(90deg, #E2B04A 0%, #F5D982 50%, #E2B04A 100%);
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px rgba(226, 176, 74, 0.3);
+}
+
+/* White logo filter for dark navy background */
+.filter-logo-white {
+  filter: brightness(0) invert(1);
+}
+
+/* Custom scrollbar for mobile / chat */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
